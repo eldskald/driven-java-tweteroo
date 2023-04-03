@@ -28,4 +28,8 @@ public class TweetsService {
         return repository.findAll(pageable).getContent();
     }
 
+    public List<Tweet> findByUsername(String username) {
+        return repository.findByUsernameOrderByIdDesc(username);
+    }
+
 }
