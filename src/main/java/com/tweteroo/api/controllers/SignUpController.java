@@ -11,14 +11,14 @@ import com.tweteroo.api.services.SignUpService;
 
 import jakarta.validation.Valid;
 
-@RestController()
+@RestController
 @RequestMapping("/sign-up")
 public class SignUpController {
 
     @Autowired
     private SignUpService service;
 
-    @PostMapping()
+    @PostMapping
     public void signUp(@RequestBody @Valid AccountDTO body) {
         service.signUp(body);
     }
