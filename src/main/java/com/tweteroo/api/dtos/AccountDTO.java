@@ -3,7 +3,7 @@ package com.tweteroo.api.dtos;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
-public record UserDTO(
+public record AccountDTO(
 
     @Size(
         min = 3, max = 16,
